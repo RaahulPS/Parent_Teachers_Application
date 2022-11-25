@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".selection">
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to ABC school"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:transitionName="logo_text" />
+    <TextView
+        android:id="@+id/logo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Knowledge is the key to success"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:transitionName="logo_text" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        >
+
+        <ImageView
+            android:id="@+id/fac_img"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/img_3" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Parent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        >
+
+        <ImageView
+            android:id="@+id/fac_img1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/img_2" />
+
+        <TextView
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:text="Faculty"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

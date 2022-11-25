@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1095238270122",
+    "project_id": "ptaapp-998cc",
+    "storage_bucket": "ptaapp-998cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095238270122:android:2ead82a83f4054359524d3",
+        "android_client_info": {
+          "package_name": "com.example.sih"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095238270122-gb2t4juh298g3j44654iuorcvr3h1hkk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBNziQ8OnAqG5JSn5x15H1HJwc5wnzeos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095238270122-gb2t4juh298g3j44654iuorcvr3h1hkk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

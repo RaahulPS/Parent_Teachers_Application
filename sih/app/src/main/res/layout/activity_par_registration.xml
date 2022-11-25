@@ -1,0 +1,164 @@
+<androidx.drawerlayout.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer_layout1"
+        android:background="#C5C5C5"
+        tools:context=".par_registration">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                layout="@layout/main_toolbar">
+            </include>
+            <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/studentname"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="student name"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/parent_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="parent name"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/student_roll"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="student roll"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone_no"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/black"
+            android:padding="5dp"
+            android:transitionName="password_tran"
+            app:boxStrokeColor="@color/black"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black"
+            app:placeholderTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Re-Enter Password"
+            android:textColorHint="@color/black"
+            android:padding="5dp"
+            android:transitionName="password_tran"
+            app:boxStrokeColor="@color/black"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black"
+            app:placeholderTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:background="#00000000"-->
+<!--            android:elevation="0dp"-->
+<!--            android:text="Forget Password?" />-->
+
+        <Button
+            android:id="@+id/nav_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#000"
+            android:text="GO"
+            android:textColor="#fff"
+            android:transitionName="button_tran" />
+
+<!--        <Button-->
+<!--            android:id="@+id/nav_register"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:background="#000"-->
+<!--            android:text="New user Sign up here"-->
+<!--            android:textColor="#fff"-->
+<!--            android:transitionName="button_tran" />-->
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_gravity="start"
+            android:background="@android:color/white"
+            android:layout_height="match_parent">
+            <include
+                layout="@layout/main_nav_drawer1">
+            </include>
+        </RelativeLayout>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>

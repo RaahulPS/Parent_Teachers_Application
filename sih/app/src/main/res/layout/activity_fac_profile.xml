@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout1"
+
+    tools:context=".fac_profile">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/main_toolbar">
+    </include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center">
+    </TextView>
+
+    <EditText
+        android:id="@+id/stud_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Student Name" />
+
+    <EditText
+        android:id="@+id/stud_roll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Roll NO" />
+
+    <EditText
+        android:id="@+id/stud_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Grade" />
+
+    <EditText
+        android:id="@+id/stud_par_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Parent name" />
+
+    <EditText
+        android:id="@+id/stud_par_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Phone number" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add" />
+
+</LinearLayout>
+<RelativeLayout
+    android:layout_width="300dp"
+    android:layout_gravity="start"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/main_nav_drawer1">
+
+    </include>
+
+</RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
